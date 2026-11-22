@@ -54,6 +54,55 @@ h2{font-size:clamp(30px,6vw,52px);line-height:1.15;font-weight:900;letter-spacin
 .card p{margin:0;color:var(--muted);font-size:16px}
 .card.big p{color:var(--ink);opacity:.8}
 @media(min-width:720px){.pains{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}.card.big{grid-column:1/-1;padding:44px 40px}.card.big h3{font-size:36px}}
+.phones{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 2px 22px;-webkit-overflow-scrolling:touch}
+.pw{flex:0 0 min(264px,74vw);width:min(264px,74vw);scroll-snap-align:center}
+@media(min-width:720px){.phones{display:grid;grid-template-columns:1fr 1fr;justify-items:center;gap:44px 22px;overflow:visible}}
+.phone{position:relative;background:#14161A;color:#F1F3EE;border:7px solid #08090B;border-radius:38px;padding:10px 14px 0;height:548px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.28);font-size:12px;line-height:1.45}
+.phone::before{content:"";position:absolute;top:8px;left:50%;width:58px;height:16px;margin-left:-29px;background:#08090B;border-radius:99px;z-index:2}
+.sb{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:700;padding:3px 6px 12px}
+.sbr{display:flex;align-items:center;gap:3px}.sbr i{width:3px;background:#F1F3EE;border-radius:1px}.sbr i:nth-child(1){height:4px}.sbr i:nth-child(2){height:7px}.sbr i:nth-child(3){height:10px}
+.sbr u{width:20px;height:10px;border:1.5px solid #F1F3EE;border-radius:3px;margin-left:3px;position:relative;text-decoration:none}.sbr u::after{content:"";position:absolute;inset:1px;right:4px;background:#C6FF00;border-radius:1px}
+.ah{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.lg{font-weight:900;letter-spacing:.05em;font-size:14px}.lg b{color:#C6FF00}
+.av{width:26px;height:26px;border-radius:50%;background:#2A2E34;display:grid;place-items:center;font-size:11px;font-weight:700}
+.gr{font-size:17px;font-weight:900;letter-spacing:-.02em;line-height:1.3}
+.gs{color:#9EA3AA;font-size:11.5px;margin:2px 0 10px}
+.cd{background:#1E2126;border-radius:16px;padding:12px;margin-bottom:10px}
+.cd h4{margin:0 0 8px;font-size:11px;color:#9EA3AA;font-weight:500}
+.wk{display:flex;align-items:center;gap:12px}
+.ring{width:64px;height:64px;flex:none;position:relative}.ring svg{width:64px;height:64px;transform:rotate(-90deg)}
+.ring span{position:absolute;inset:0;display:grid;place-items:center;font-size:12px;font-weight:900;text-align:center;line-height:1.1}
+.dys{flex:1;display:flex;gap:5px;height:64px;align-items:flex-end}
+.dy{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:3px}
+.dy i{width:100%;background:#2E3238;border-radius:4px 4px 2px 2px}.dy.on i{background:#C6FF00}.dy span{font-size:9px;color:#9EA3AA}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:5px;background:#272B31;border-radius:99px;padding:4px 10px;font-size:11px;font-weight:700}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:#C6FF00}.chip.off{color:#9EA3AA}.chip.off::before{background:#5A5F66}
+.rc{display:flex;gap:10px;align-items:center}
+.rc svg{width:92px;height:56px;flex:none;border-radius:10px}
+.rc b{display:block;font-size:13px}.rc span{color:#9EA3AA;font-size:11px}
+.map{display:block;width:100%;height:112px;border-radius:14px;margin-bottom:10px}
+.seg{display:flex;gap:6px;margin:2px 0 8px;flex-wrap:wrap}
+.seg span{padding:4px 11px;border-radius:99px;background:#272B31;font-size:11px;font-weight:700;color:#9EA3AA}.seg span.on{background:#C6FF00;color:#14161A}
+.ph-row{display:flex;justify-content:space-between;background:#1E2126;border-radius:14px;padding:10px 12px;margin-bottom:10px}
+.ph-row b{display:block;font-size:15px}.ph-row span{color:#9EA3AA;font-size:10px}
+.ph-bars{display:flex;align-items:flex-end;gap:7px;height:58px;margin:4px 0 4px}
+.ph-bars i{flex:1;background:#2E3238;border-radius:5px 5px 2px 2px}.ph-bars i.hi{background:#C6FF00}
+.ph-lab{display:flex;justify-content:space-between;color:#9EA3AA;font-size:10px;margin-bottom:10px}
+.ph-tip{background:#1E2126;border-left:3px solid #C6FF00;border-radius:10px;padding:10px 12px;font-size:12.5px}
+.ph-list{list-style:none;margin:6px 0 0;padding:0}
+.ph-list li{display:flex;justify-content:space-between;padding:9px 10px;border-radius:10px;font-size:13px}
+.ph-list li:nth-child(odd){background:#1A1D21}
+.ph-list li b{color:#C6FF00;margin-right:8px;font-weight:900}
+.ph-list li.me{background:#C6FF00;color:#14161A;font-weight:900}.ph-list li.me b{color:#14161A}
+.race{background:#1E2126;border-radius:14px;padding:12px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:700}
+.race small{display:block;font-weight:400;color:#9EA3AA;font-size:11px}
+.race em{font-style:normal;background:#C6FF00;color:#14161A;font-weight:900;font-size:12px;padding:3px 9px;border-radius:99px}
+.tb{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-around;padding:8px 6px 14px;background:#101216;border-top:1px solid #23272D}
+.tb div{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:9.5px;color:#7C828A}.tb .on{color:#C6FF00}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pc{margin-top:16px;font-weight:700;font-size:16px}
+.pc small{display:block;font-weight:400;color:var(--muted);font-size:14px}
 .vow{list-style:none;margin:0;padding:0}
 .vow li{display:flex;gap:20px;align-items:baseline;padding:22px 0;border-top:1px solid var(--line);font-size:20px;font-weight:700}
 .vow li:last-child{border-bottom:1px solid var(--line)}
@@ -77,7 +126,6 @@ footer{padding:28px 0 44px;font-size:14px;color:var(--muted);display:flex;justif
       <h1>달린 기록,<br>이제 <mark>한눈에.</mark></h1>
       <p class="sub">워치로 달리든 폰으로 달리든 상관없어요. 흩어진 기록을 한곳에 모으고, 어려운 숫자는 쉬운 한국어로 알려드려요.</p>
       <a class="btn" href="#survey">출시 소식 받고 의견 남기기</a>
-      
     </div>
   </div>
 </div>
@@ -105,6 +153,17 @@ footer{padding:28px 0 44px;font-size:14px;color:var(--muted);display:flex;justif
   </section>
 
   <section class="rv" style="padding-top:0">
+    <h2>이런 화면을<br>구상하고 있어요.</h2>
+    <p class="lead">아직 개발 전이라 디자인 시안이에요. 숫자와 이름은 모두 예시고, 실제 화면은 달라질 수 있어요.</p>
+    <div class="phones">
+      <div class="pw"><div class="phone" role="img" aria-label="홈 화면 시안"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><u></u></span></div><div class="ah"><span class="lg">TRACK<b>.</b></span><span class="av">지</span></div><div class="gr">좋은 아침이에요, 지민님</div><div class="gs">이번 주 목표까지 8.6km 남았어요</div><div class="cd"><h4>이번 주 러닝</h4><div class="wk"><div class="ring"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="#2E3238" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#C6FF00" stroke-width="7" stroke-linecap="round" stroke-dasharray="116 163"/></svg><span>21.4<br>km</span></div><div class="dys"><div class="dy"><i style="height:40%"></i><span>월</span></div><div class="dy"><i style="height:6%"></i><span>화</span></div><div class="dy"><i style="height:62%"></i><span>수</span></div><div class="dy"><i style="height:28%"></i><span>목</span></div><div class="dy"><i style="height:74%"></i><span>금</span></div><div class="dy on"><i style="height:90%"></i><span>토</span></div><div class="dy"><i style="height:6%"></i><span>일</span></div></div></div></div><div class="cd"><h4>연결된 기기·앱</h4><div class="chips"><span class="chip">가민</span><span class="chip">스트라바</span><span class="chip off">삼성헬스</span></div></div><div class="cd rc"><svg class="" viewBox="0 0 240 120" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="240" height="120" fill="#16181C"/><path d="M0 100C60 85 120 112 240 92" stroke="#1B2A33" stroke-width="14" fill="none"/><path d="M0 40H240M0 80H240M60 0V120M150 0V120" stroke="#23272D" stroke-width="5" fill="none"/><path d="M22 96C52 88 62 48 98 54S142 92 172 60S206 32 220 36" fill="none" stroke="#C6FF00" stroke-width="3.5" stroke-linecap="round"/><circle cx="22" cy="96" r="4.5" fill="#F1F3EE"/><circle cx="220" cy="36" r="5" fill="#C6FF00" stroke="#14161A" stroke-width="2"/></svg><div><b>어제 · 탄천 러닝</b><span>5.21km · 5:48/km</span></div></div><div class="tb"><div class="on"><svg class="ic" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg>홈</div><div><svg class="ic" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>기록</div><div><svg class="ic" viewBox="0 0 24 24"><path d="M5 21V10M12 21V4M19 21V14"/></svg>랭킹</div><div><svg class="ic" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>대회</div></div></div><div class="pc">한눈에 보는 내 러닝<small>기기·앱 기록도 한곳에</small></div></div>
+      <div class="pw"><div class="phone" role="img" aria-label="기록 분석 화면 시안"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><u></u></span></div><div class="ah"><span class="lg" style="font-size:13px;letter-spacing:0">‹ 탄천 러닝</span><span style="color:#9EA3AA;font-size:11px">어제 18:40</span></div><svg class="map" viewBox="0 0 240 120" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="240" height="120" fill="#16181C"/><path d="M0 100C60 85 120 112 240 92" stroke="#1B2A33" stroke-width="14" fill="none"/><path d="M0 40H240M0 80H240M60 0V120M150 0V120" stroke="#23272D" stroke-width="5" fill="none"/><path d="M22 96C52 88 62 48 98 54S142 92 172 60S206 32 220 36" fill="none" stroke="#C6FF00" stroke-width="3.5" stroke-linecap="round"/><circle cx="22" cy="96" r="4.5" fill="#F1F3EE"/><circle cx="220" cy="36" r="5" fill="#C6FF00" stroke="#14161A" stroke-width="2"/></svg><div class="ph-row"><div><b>5.21km</b><span>거리</span></div><div><b>30:14</b><span>시간</span></div><div><b>5:48</b><span>평균 페이스</span></div></div><div class="ph-bars"><i style="height:62%"></i><i style="height:70%"></i><i class="hi" style="height:88%"></i><i style="height:74%"></i><i style="height:60%"></i></div><div class="ph-lab"><span>1km</span><span>2</span><span>3</span><span>4</span><span>5</span></div><div class="ph-tip">지난주보다 평균 페이스가 12초 빨라졌어요. 심박도 안정적이라 좋은 흐름이에요.</div><div class="tb"><div><svg class="ic" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg>홈</div><div class="on"><svg class="ic" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>기록</div><div><svg class="ic" viewBox="0 0 24 24"><path d="M5 21V10M12 21V4M19 21V14"/></svg>랭킹</div><div><svg class="ic" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>대회</div></div></div><div class="pc">쉬운 한국어 기록 분석<small>숫자 대신 한 줄로 알려줘요</small></div></div>
+      <div class="pw"><div class="phone" role="img" aria-label="우리 동네 랭킹 화면 시안"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><u></u></span></div><div class="ah"><span class="lg" style="font-size:15px;letter-spacing:0">랭킹</span><span style="color:#9EA3AA;font-size:11px">이번 달</span></div><div class="seg"><span class="on">탄천</span><span>한강</span><span>올림픽공원</span></div><div class="ph-t" style="font-size:11px;font-weight:900;letter-spacing:.08em;color:#C6FF00">5KM 구간 · 러너 1,284명</div><ul class="ph-list"><li><span><b>1</b>달리는고래</span><span>21:40</span></li><li><span><b>2</b>새벽러너</span><span>22:05</span></li><li><span><b>3</b>한강바람</span><span>22:31</span></li><li><span><b>4</b>트랙러버</span><span>22:58</span></li><li><span><b>5</b>주말러너</span><span>23:12</span></li><li style="justify-content:center;color:#9EA3AA;background:none">⋯</li><li class="me"><span><b>27</b>나</span><span>29:10</span></li></ul><div class="tb"><div><svg class="ic" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg>홈</div><div><svg class="ic" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>기록</div><div class="on"><svg class="ic" viewBox="0 0 24 24"><path d="M5 21V10M12 21V4M19 21V14"/></svg>랭킹</div><div><svg class="ic" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>대회</div></div></div><div class="pc">우리 동네 랭킹<small>내가 자주 달리는 코스 기준으로</small></div></div>
+      <div class="pw"><div class="phone" role="img" aria-label="국내 대회 일정 화면 시안"><div class="sb"><span>9:41</span><span class="sbr"><i></i><i></i><i></i><u></u></span></div><div class="ah"><span class="lg" style="font-size:15px;letter-spacing:0">대회</span></div><div class="seg"><span class="on">전체</span><span>10K</span><span>하프</span><span>풀</span></div><div class="race"><span>가을 10K 레이스<small>서울 · 10K</small></span><em>D-21</em></div><div class="race"><span>겨울 하프 마라톤<small>경기 · 하프</small></span><em>D-63</em></div><div class="race"><span>봄 5K 챌린지<small>부산 · 5K</small></span><em>D-120</em></div><div class="ph-tip" style="margin-top:12px">완주 기록 3회가 내 기록과 함께 쌓여 있어요.</div><div class="tb"><div><svg class="ic" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg>홈</div><div><svg class="ic" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>기록</div><div><svg class="ic" viewBox="0 0 24 24"><path d="M5 21V10M12 21V4M19 21V14"/></svg>랭킹</div><div class="on"><svg class="ic" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>대회</div></div></div><div class="pc">국내 대회 일정과 완주 기록<small>준비부터 완주까지 한곳에서</small></div></div>
+    </div>
+  </section>
+
+  <section class="rv" style="padding-top:0">
     <h2>만들 때 지키고 싶은<br>세 가지.</h2>
     <ul class="vow">
       <li><span>01</span>내 기록은 내 것. 가져오기와 내보내기는 쉽게.</li>
@@ -120,13 +179,13 @@ footer{padding:28px 0 44px;font-size:14px;color:var(--muted);display:flex;justif
     <div class="cta rv">
       <h2>이런 앱,<br>써보고 싶으세요?</h2>
       <p>1분이면 끝나요. 지금 쓰는 러닝 앱과 불편한 점, 원하는 기능을 알려주세요. 여러분의 답이 TRACK의 첫 번째 기능이 돼요.</p>
-      <a class="btn" href="https://tally.so/r/2jA6jb" id="survey-link">설문 참여하기</a>
+      <a class="btn" href="https://tally.so/r/2jA6jb" target="_blank" rel="noopener">설문 참여하기</a>
     </div>
   </div>
 </div>
 
 <div class="wrap">
-  <footer><span>© TRACK</span><span>인스타그램 @mytrack_official 에서 소식을 전해요</span></footer>
+  <footer><span>© TRACK</span><span>인스타그램 <a href="https://www.instagram.com/mytrack_official" target="_blank" rel="noopener">@mytrack_official</a> 에서 개발 소식을 전해요</span></footer>
 </div>
 <script>
 (function(){var els=document.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
